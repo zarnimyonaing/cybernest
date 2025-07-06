@@ -1,0 +1,363 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    min-width: 200px;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero-section .card {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+}
+
+.feature-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+.feature-item i {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Chapter Cards */
+.chapter-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.chapter-card:hover {
+    border-left-color: #0d6efd;
+}
+
+.chapter-card.completed {
+    border-left-color: #198754;
+    background-color: #f8fff9;
+}
+
+.chapter-number {
+    min-width: 40px;
+}
+
+.completion-badge {
+    font-size: 1.2rem;
+}
+
+.topic-card {
+    transition: all 0.2s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-1px);
+}
+
+.topic-number {
+    min-width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Chapter Content */
+.chapter-content {
+    line-height: 1.8;
+}
+
+.chapter-content h1,
+.chapter-content h2,
+.chapter-content h3,
+.chapter-content h4 {
+    color: #0d6efd;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.chapter-content h1:first-child,
+.chapter-content h2:first-child,
+.chapter-content h3:first-child,
+.chapter-content h4:first-child {
+    margin-top: 0;
+}
+
+.chapter-content ul,
+.chapter-content ol {
+    padding-left: 2rem;
+}
+
+.chapter-content li {
+    margin-bottom: 0.5rem;
+}
+
+.chapter-content blockquote {
+    border-left: 4px solid #0d6efd;
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.placeholder-content {
+    padding: 2rem 0;
+}
+
+/* Quiz Styles */
+.question-block {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0d6efd;
+}
+
+.question-title {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-check {
+    padding-left: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.form-check-label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Results Styles */
+.result-score {
+    padding: 2rem 0;
+}
+
+.result-score .display-4 {
+    font-weight: bold;
+}
+
+/* Survey Styles */
+.form-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+}
+
+.survey-iframe {
+    border: none;
+    width: 100%;
+    background: white;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Badge Styles */
+.badge {
+    font-weight: 500;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0a3622;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero-section .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .progress-indicator {
+        min-width: auto;
+        margin-top: 1rem;
+    }
+    
+    .feature-item {
+        margin-bottom: 2rem;
+    }
+    
+    .chapter-card {
+        margin-bottom: 1rem;
+    }
+    
+    .question-block {
+        padding: 1rem;
+    }
+    
+    .survey-iframe {
+        height: 2400px;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .display-5 {
+        font-size: 1.5rem;
+    }
+    
+    .breadcrumb {
+        font-size: 0.875rem;
+    }
+    
+    .chapter-number {
+        min-width: 30px;
+    }
+    
+    .form-check {
+        padding-left: 1.5rem;
+    }
+    
+    .survey-iframe {
+        height: 2200px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn,
+    .breadcrumb,
+    header,
+    footer {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+    }
+    
+    .chapter-content {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+}
+
+/* Animation for completion status */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.completion-badge i {
+    animation: fadeInScale 0.5s ease;
+}
+
+/* Focus styles for accessibility */
+.btn:focus,
+.form-check-input:focus,
+.card:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+/* Loading animation for iframe */
+.survey-iframe {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

@@ -1,0 +1,53 @@
+{
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.3"
+    },
+    "api/chapters.php": {
+      "runtime": "vercel-php@0.7.3"
+    },
+    "api/chapter.php": {
+      "runtime": "vercel-php@0.7.3"
+    },
+    "api/quiz.php": {
+      "runtime": "vercel-php@0.7.3"
+    },
+    "api/survey.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/chapters.php",
+      "dest": "/api/chapters.php"
+    },
+    {
+      "src": "/chapter.php",
+      "dest": "/api/chapter.php"
+    },
+    {
+      "src": "/quiz.php",
+      "dest": "/api/quiz.php"
+    },
+    {
+      "src": "/survey.php",
+      "dest": "/api/survey.php"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/course/(.*)",
+      "dest": "/api/course/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+Create a course content website with landing page as info on the course and continue button
+
+Next screen show chapters to complete.
+
+Each chapter will have course content which is stored in folder course/chapter/ file.extention. refer to the attached topics.
+
+After completing each chapter when next button is pressed matk the current chapter as conpleted.
+
+Once all the 20 chapters are completed. Give a quiz based on the below questions and answers as given
+
+Show the score based on number of correct answers they have chosen . don't lock the chapters so users can pick any topic they want and do the quiz.
+
+—————-questions and answers——
+
+Question 1
+Option 1
+Option 2 —- correct
+Option 3
+
+Question 2
+Option 1 —correct
+Option 2
+Option 3
+
+Etc
+————
+
+After the quiz score is showed when nxt is pressed
+
+use php html,css, javascript as tech stack. No database connection required. there needs to be some changes:
+
+Create a course content website with the following structure and features:
+
+Landing Page:
+
+Display information about the cybersecurity training program.
+
+Include a “Start Training” button to proceed to the chapter list. include survey button so anyone can come back to submit a survey.
+
+Chapters Screen:
+
+List 20 chapters for students to complete.
+
+Each chapter should link to its respective content page.
+
+Course content files for each chapter will be uploaded later and stored in the directory:
+course/chapter/filename.extension
+
+Chapter Content Page:
+
+Display the content for the selected chapter.
+
+Include a “Next” button to proceed to a short quiz related to that chapter.
+
+Per-Chapter Quiz:
+
+After each chapter, show a quiz with a set of predefined multiple-choice questions.
+
+Users select their answers, and when “Submit” is pressed, display their score for that quiz immediately.
+
+After submitting the quiz and the answers are correct, mark the chapter as completed.
+
+Return to the chapter list screen with the completed chapter visually marked.
+
+Survey Feedback (After Final Chapter & Final Quiz):
+
+Once all 20 chapters and their respective quizzes are completed, redirect students to a feedback survey page.
+
+Embed a Google Form for students to rate the course content and provide feedback.
+embed the google form <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOsmujXt0RNI6tqRuYDqrjuZv6p-sBnhilOzqaLBdzN2N-rw/viewform?embedded=true" width="640" height="2821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> also, make this survey show after completed all the topics. Also display the survey button in home page so anyone can come back and do the survey even though they haven't completed any topics.
+
+No need to store survey responses locally; Google Forms will handle the data collection.
+
+Tech Stack:
+
+PHP
+
+HTML
+
+CSS
+
+JavaScript
+
+No database connection required; track chapter completion status using PHP session or file-based storage if needed.
+
+Notes:
+
+No final big quiz. Each chapter will have its own individual quiz.
+
+Google Forms will replace the previously planned final survey CSV storage method.
+
+Ensure clean, responsive layout compatible with desktop and mobile browsers.

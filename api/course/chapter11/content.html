@@ -1,0 +1,373 @@
+<div class="chapter-content">
+    <h2>Device Encryption and Securing Mobile Devices</h2>
+    
+    <div class="alert alert-primary mb-4">
+        <i class="fas fa-mobile-alt me-2"></i>
+        <strong>Chapter Objective:</strong> Learn how to encrypt your devices and implement comprehensive security measures for smartphones, tablets, and other mobile devices.
+    </div>
+
+    <h3>Understanding Device Encryption</h3>
+    <p>Device encryption is the process of converting data on your device into a code that can only be accessed with the correct key or password. This protects your personal information if your device is lost, stolen, or accessed by unauthorized individuals.</p>
+
+    <h3>Why Device Encryption Matters</h3>
+    
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h6 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Protection Benefits</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li>Protects personal data if device is stolen</li>
+                        <li>Secures sensitive work information</li>
+                        <li>Prevents unauthorized access to accounts</li>
+                        <li>Maintains privacy of communications</li>
+                        <li>Protects financial and banking apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-info">
+                <div class="card-header bg-info text-white">
+                    <h6 class="mb-0"><i class="fas fa-law me-2"></i>Compliance Benefits</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="mb-0">
+                        <li>Meets legal and regulatory requirements</li>
+                        <li>Satisfies corporate security policies</li>
+                        <li>Protects against data breach liability</li>
+                        <li>Maintains customer trust and confidence</li>
+                        <li>Supports professional obligations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Types of Device Encryption</h3>
+    
+    <h4>Full Disk Encryption (FDE):</h4>
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <p><strong>What it protects:</strong> Entire device storage including operating system and all files</p>
+            <p><strong>How it works:</strong> Encrypts data at rest, requires authentication to access any information</p>
+            <p><strong>Best for:</strong> Comprehensive protection of laptops, desktops, and mobile devices</p>
+        </div>
+    </div>
+
+    <h4>File-Level Encryption:</h4>
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <p><strong>What it protects:</strong> Individual files and folders</p>
+            <p><strong>How it works:</strong> Selectively encrypts specific sensitive data</p>
+            <p><strong>Best for:</strong> Protecting specific documents while allowing normal device operation</p>
+        </div>
+    </div>
+
+    <h3>Mobile Device Security Fundamentals</h3>
+    
+    <h4>Screen Lock Security:</h4>
+    <div class="alert alert-warning">
+        <h6><i class="fas fa-lock me-2"></i>Lock Screen Options (Ranked by Security):</h6>
+        <ol class="mb-0">
+            <li><strong>Biometric + PIN/Password:</strong> Fingerprint, face, or iris recognition with backup</li>
+            <li><strong>Strong Password/Passphrase:</strong> Complex alphanumeric combination</li>
+            <li><strong>6+ Digit PIN:</strong> Longer numeric codes</li>
+            <li><strong>4-Digit PIN:</strong> Basic but better than nothing</li>
+            <li><strong>Pattern Lock:</strong> Easy to guess, avoid complex patterns visible on screen</li>
+            <li><strong>No Lock:</strong> Never recommended</li>
+        </ol>
+    </div>
+
+    <h3>Platform-Specific Encryption Setup</h3>
+    
+    <h4>iOS Device Encryption:</h4>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h6 class="mb-0">iPhone/iPad Setup</h6>
+                </div>
+                <div class="card-body">
+                    <ol class="small mb-0">
+                        <li>Go to Settings > Face ID & Passcode (or Touch ID & Passcode)</li>
+                        <li>Set a strong 6+ digit passcode</li>
+                        <li>Enable "Erase Data" after 10 failed attempts</li>
+                        <li>Turn on "Data Protection" (automatic with passcode)</li>
+                        <li>Verify encryption status in Settings > Privacy & Security</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h6 class="mb-0">Additional iOS Security</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="small mb-0">
+                        <li>Enable Find My iPhone</li>
+                        <li>Set up two-factor authentication</li>
+                        <li>Use App Store downloads only</li>
+                        <li>Enable automatic updates</li>
+                        <li>Configure privacy settings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4>Android Device Encryption:</h4>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">Android Setup</h6>
+                </div>
+                <div class="card-body">
+                    <ol class="small mb-0">
+                        <li>Go to Settings > Security > Screen Lock</li>
+                        <li>Set PIN, password, or pattern</li>
+                        <li>Navigate to Settings > Security > Encryption</li>
+                        <li>Select "Encrypt Device" or "Encrypt Phone"</li>
+                        <li>Wait for encryption process to complete</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h6 class="mb-0">Android Security Features</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="small mb-0">
+                        <li>Enable Google Play Protect</li>
+                        <li>Use Google Play Store only</li>
+                        <li>Enable Find My Device</li>
+                        <li>Configure Smart Lock cautiously</li>
+                        <li>Review app permissions regularly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Advanced Mobile Security Features</h3>
+    
+    <h4>Biometric Authentication:</h4>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="text-center">
+                <i class="fas fa-fingerprint display-4 text-primary mb-2"></i>
+                <h6>Fingerprint</h6>
+                <p class="text-muted small">Fast and convenient, good security</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="text-center">
+                <i class="fas fa-eye display-4 text-success mb-2"></i>
+                <h6>Face Recognition</h6>
+                <p class="text-muted small">Convenient, varying security levels</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="text-center">
+                <i class="fas fa-user-circle display-4 text-info mb-2"></i>
+                <h6>Iris/Retina</h6>
+                <p class="text-muted small">Highest security, less common</p>
+            </div>
+        </div>
+    </div>
+
+    <h4>Remote Security Features:</h4>
+    <div class="card border-warning mb-3">
+        <div class="card-header bg-warning text-dark">
+            <h6 class="mb-0"><i class="fas fa-satellite me-2"></i>Find My Device / Find My iPhone</h6>
+        </div>
+        <div class="card-body">
+            <ul class="mb-0">
+                <li><strong>Locate:</strong> Find your device on a map</li>
+                <li><strong>Ring:</strong> Make device sound even if on silent</li>
+                <li><strong>Lock:</strong> Remotely lock device and display message</li>
+                <li><strong>Erase:</strong> Completely wipe device data remotely</li>
+                <li><strong>Lost Mode:</strong> Disable payments and notifications while tracking</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>App Security and Permissions</h3>
+    
+    <h4>Managing App Permissions:</h4>
+    <div class="alert alert-info">
+        <h6><i class="fas fa-cog me-2"></i>Permission Review Guidelines:</h6>
+        <ul class="mb-0">
+            <li><strong>Location:</strong> Only grant to apps that genuinely need it</li>
+            <li><strong>Camera/Microphone:</strong> Be selective, review regularly</li>
+            <li><strong>Contacts:</strong> Limit to communication and productivity apps</li>
+            <li><strong>Photos:</strong> Grant only to apps that manipulate or share images</li>
+            <li><strong>Calendar/Notifications:</strong> Consider if functionality requires access</li>
+            <li><strong>Health/Fitness:</strong> Only to legitimate health tracking apps</li>
+        </ul>
+    </div>
+
+    <h4>Safe App Installation:</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <h6 class="text-success"><i class="fas fa-check me-2"></i>Best Practices:</h6>
+            <ul>
+                <li>Use official app stores only</li>
+                <li>Read reviews and ratings</li>
+                <li>Check developer reputation</li>
+                <li>Review permissions before installing</li>
+                <li>Keep apps updated</li>
+                <li>Remove unused apps</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h6 class="text-danger"><i class="fas fa-times me-2"></i>Avoid:</h6>
+            <ul>
+                <li>Side-loading from unknown sources</li>
+                <li>Apps with excessive permissions</li>
+                <li>Apps from unknown developers</li>
+                <li>Pirated or cracked applications</li>
+                <li>Apps with poor reviews</li>
+                <li>Suspicious free versions of paid apps</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Network Security for Mobile Devices</h3>
+    
+    <h4>WiFi Security:</h4>
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <h6><i class="fas fa-wifi me-2"></i>Mobile WiFi Best Practices:</h6>
+            <ul class="mb-0">
+                <li>Turn off auto-join for unknown networks</li>
+                <li>Use VPN on public WiFi networks</li>
+                <li>Verify network names with establishments</li>
+                <li>Disable WiFi when not needed to prevent auto-connection</li>
+                <li>Forget networks you no longer use</li>
+                <li>Use cellular data for sensitive transactions</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4>Bluetooth Security:</h4>
+    <ul>
+        <li>Turn off Bluetooth when not in use</li>
+        <li>Set device to non-discoverable mode</li>
+        <li>Only pair with trusted devices</li>
+        <li>Remove old or unused pairings</li>
+        <li>Be cautious of pairing requests in public</li>
+        <li>Keep Bluetooth software updated</li>
+    </ul>
+
+    <h3>Data Protection and Backup</h3>
+    
+    <h4>Mobile Backup Strategies:</h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">Automatic Cloud Backup</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="small mb-0">
+                        <li>Enable iCloud or Google Backup</li>
+                        <li>Include app data and settings</li>
+                        <li>Back up photos and videos</li>
+                        <li>Sync contacts and calendars</li>
+                        <li>Monitor backup frequency</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white">
+                    <h6 class="mb-0">Local Backup Options</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="small mb-0">
+                        <li>iTunes/Finder backup for iOS</li>
+                        <li>Android Debug Bridge for Android</li>
+                        <li>Export important data manually</li>
+                        <li>Use third-party backup software</li>
+                        <li>Store backups securely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Physical Security Measures</h3>
+    
+    <h4>Device Protection:</h4>
+    <div class="alert alert-warning">
+        <h6><i class="fas fa-hand-paper me-2"></i>Physical Security Tips:</h6>
+        <ul class="mb-0">
+            <li>Never leave devices unattended in public</li>
+            <li>Use screen privacy filters in public spaces</li>
+            <li>Be aware of shoulder surfing when entering passwords</li>
+            <li>Keep devices out of sight in vehicles</li>
+            <li>Use device cases and screen protectors</li>
+            <li>Consider tracking devices or tags for valuable items</li>
+            <li>Register devices with manufacturers for warranty and tracking</li>
+        </ul>
+    </div>
+
+    <h3>Enterprise Mobile Device Management</h3>
+    
+    <h4>BYOD (Bring Your Own Device) Considerations:</h4>
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <h6><i class="fas fa-briefcase me-2"></i>Business Device Security:</h6>
+            <ul class="mb-0">
+                <li>Follow company mobile device policies</li>
+                <li>Install required security software</li>
+                <li>Separate personal and work data</li>
+                <li>Allow remote management for work accounts</li>
+                <li>Report lost or stolen devices immediately</li>
+                <li>Use company-approved apps for work</li>
+                <li>Understand data ownership policies</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Incident Response for Mobile Devices</h3>
+    
+    <h4>If Your Device is Lost or Stolen:</h4>
+    <div class="alert alert-danger">
+        <h6><i class="fas fa-exclamation-triangle me-2"></i>Emergency Response Steps:</h6>
+        <ol class="mb-0">
+            <li><strong>Use Find My Device immediately:</strong> Locate, lock, or erase remotely</li>
+            <li><strong>Change passwords:</strong> Update credentials for all accounts</li>
+            <li><strong>Contact carriers:</strong> Suspend service to prevent unauthorized use</li>
+            <li><strong>Report to authorities:</strong> File police report with serial numbers</li>
+            <li><strong>Notify financial institutions:</strong> Alert banks and credit card companies</li>
+            <li><strong>Monitor accounts:</strong> Watch for unauthorized access or charges</li>
+            <li><strong>Contact workplace:</strong> Inform IT department if work data is involved</li>
+        </ol>
+    </div>
+
+    <h3>Future-Proofing Mobile Security</h3>
+    
+    <h4>Staying Current:</h4>
+    <ul>
+        <li>Enable automatic security updates</li>
+        <li>Stay informed about new threats and vulnerabilities</li>
+        <li>Regularly review and update security settings</li>
+        <li>Assess new security features as they become available</li>
+        <li>Participate in security awareness training</li>
+        <li>Plan for device replacement and data migration</li>
+    </ul>
+
+    <div class="alert alert-success">
+        <i class="fas fa-mobile-alt me-2"></i>
+        <strong>Remember:</strong> Your mobile device is a portable computer carrying sensitive personal and potentially work-related information. Treat it with the same security consciousness you would any valuable asset!
+    </div>
+</div>
